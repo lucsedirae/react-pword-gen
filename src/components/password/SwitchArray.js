@@ -1,8 +1,12 @@
+//* Dependencies
 import React from "react";
-import FormGroup from "@material-ui/core/FormGroup";
+
+//* MUI comps, hooks, and icons
 import FormControlLabel from "@material-ui/core/FormControlLabel";
+import FormGroup from "@material-ui/core/FormGroup";
 import Switch from "@material-ui/core/Switch";
 
+//* Exported component
 export default function SwitchArray(props) {
   const [state, setState] = React.useState({
     checkedA: props.isUpper,

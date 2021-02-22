@@ -1,7 +1,11 @@
+//* Dependencies
 import React, { useState } from "react";
-import Typography from "@material-ui/core/Typography";
-import Slider from "@material-ui/core/Slider";
 
+//* MUI comps, hooks, and icons
+import Slider from "@material-ui/core/Slider";
+import Typography from "@material-ui/core/Typography";
+
+//* Exported component
 function LengthSlider(props) {
   const [val, setVal] = useState([18]);
 

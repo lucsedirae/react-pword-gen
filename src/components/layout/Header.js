@@ -1,7 +1,10 @@
+//* Dependencies
 import React, { Fragment } from "react";
 
+//* MUI comps, hooks, and icons
 import Typography from "@material-ui/core/Typography";
 
+//* Exported component
 const Header = () => {
   return (
     <Fragment>

@@ -1,6 +1,8 @@
+//* Dependencies
 import React from "react";
 import styled from "styled-components";
 
+//* Custom components
 import LengthSlider from "./LengthSlider";
 import SwitchArray from "./SwitchArray";
 
@@ -20,6 +22,7 @@ const SliderContainer = styled.div`
   padding: 1rem;
 `;
 
+//* Exported component
 const SettingsBox = (props) => {
   const { isUpper, isLower, isNumeric, isSpecial } = props.settings;
 

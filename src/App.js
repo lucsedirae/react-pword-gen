@@ -1,17 +1,20 @@
+//* Dependencies
 import React from "react";
 import "./App.css";
 
+//* MUI comps, hooks, and icons
+import Container from "@material-ui/core/Container";
+
+//* Custom components
 import PwordBox from "./components/password/PwordBox";
 
-import Container from "@material-ui/core/Container"
-
+//* Exported component
 function App() {
   return (
     <div className="App">
       <div className="bground" />
       <Container>
-      <PwordBox />
-
+        <PwordBox />
       </Container>
     </div>
   );

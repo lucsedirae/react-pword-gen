@@ -1,12 +1,17 @@
+//* Dependencies
 import React, { Fragment, useState } from "react";
 
+//* MUI comps, hooks, and icons
 import Container from "@material-ui/core/Container";
-import Buttons from "./Buttons";
-import Header from "../layout/Header";
-import DisplayBox from "./DisplayBox";
-import SettingsBox from "./SettingsBox";
-import { Typography } from "@material-ui/core";
+import Typography from "@material-ui/core/Typography";
 
+//* Custom components
+import Buttons from "./Buttons";
+import DisplayBox from "./DisplayBox";
+import Header from "../layout/Header";
+import SettingsBox from "./SettingsBox";
+
+//* Exported component
 const PwordBox = () => {
   const [settings, setSettings] = useState({
     passwordLength: 18,
@@ -90,8 +95,7 @@ const PwordBox = () => {
     }
 
     shuffle(tempArray);
-    
-    setPassword(tempArray);
+    setPassword(tempArray.join(""));
   }
 
   function resetForm() {
@@ -124,7 +128,7 @@ const PwordBox = () => {
             </Typography>
           ) : (
             <Fragment>
-              <DisplayBox settings={settings}  />
+              <DisplayBox settings={settings} />
               <br />
               <Buttons generatePword={generatePword} resetForm={resetForm} />
             </Fragment>
