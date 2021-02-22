@@ -39,3 +39,26 @@ body {
 .wrapper {
   padding: 2rem;
 }
+
+@media only screen and (max-width: 450px) {
+  .paper {
+    width: 95%;
+    position: relative;
+    top: -250px;
+    /* left: 0; */
+  }
+  .bground {
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(180, 240, 220, 0.8),
+        rgba(170, 230, 195, 0.8)
+      ),
+      url("./img/bground.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    text-align: center;
+    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+  }
+}
